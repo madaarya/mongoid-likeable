@@ -5,16 +5,16 @@ Gem::Specification.new do |s|
   s.name        = 'mongoid-likeable'
   s.version     = '4.2.2'
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ['diowa']
-  s.email       = ['dev@diowa.com']
-  s.homepage    = 'https://github.com/diowa/mongoid-likeable'
+  s.authors     = ['mada arya']
+  s.email       = ['lokermada@gmail.com']
+  s.homepage    = 'https://github.com/madha14/mongoid-likeable'
   s.summary     = 'Add likes to your Mongoid documents'
   s.license     = 'BSD 2-Clause'
   s.description = s.summary
 
   s.rubyforge_project = 'mongoid-likeable'
 
-  s.add_dependency 'mongoid', '~> 3.1.4'
+  s.add_dependency 'mongoid'
 
   s.add_development_dependency 'database_cleaner'
   s.add_development_dependency 'rake'
