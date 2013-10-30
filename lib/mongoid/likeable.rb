@@ -3,7 +3,7 @@ require 'mongoid'
 module Mongoid
   module Likeable
 
-    extend ActiveSupport::Concern
+#    extend ActiveSupport::Concern
 
     included do
       field :likes, type: Integer, default: 0
