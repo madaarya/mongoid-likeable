@@ -20,7 +20,7 @@ module Mongoid
     def unlike(liker)
       id = liker_id(liker)
       return unless liked? id
-      likers.pull(id)
+      likers.delete(id)
       update_likers
     end
 
