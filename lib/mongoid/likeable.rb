@@ -13,14 +13,14 @@ module Mongoid
     def like(liker)
       id = liker_id(liker)
       return if liked? id
-      push likers: id
+      likers.push(id)
       update_likers
     end
 
     def unlike(liker)
       id = liker_id(liker)
       return unless liked? id
-      pull likers: id
+      likers.delete(id)
       update_likers
     end
 
